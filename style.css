@@ -14,3 +14,7 @@ body
     height:800px;
     border: 2px solid black;
 }
+.wrapper
+{
+    display:flex;
+}
