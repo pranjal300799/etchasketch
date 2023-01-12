@@ -33,4 +33,9 @@ function toggleGrid(state)
     }
     return state;
 }
+function addEvents()
+{
+let button=document.querySelector('.toggleGrid');
+button.addEventListener('click',()=>{state=toggleGrid(state);});
+}
 addDivs(numberOfSquares);
