@@ -1,7 +1,6 @@
-
-   let sketchpad=document.querySelector(".sketchpad");
+  let sketchpad=document.querySelector(".sketchpad");
    let numberOfSquares=+prompt('no of squares on each edge');
-   addDivs(numberOfSquares);
+
 function addDivs(number)
 {
    for(let i=0;i<number**2;i++)
@@ -11,7 +10,27 @@ function addDivs(number)
        sketchpad.appendChild(square);
    }
 }
-function toggleGrid()
+function toggleGrid(state)
 {
-    square.style.border=" 1px solid black";
+    let divsList=document.querySelectorAll('.sketchpad>div');
+    if(state==='off')
+    {
+      showGrid();
+    }
+    else
+    {
+      removeGrid();
+    }
+    function showGrid()
+    {
+      divsList.forEach(div=>div.classList.add('gridon'));
+      state='on';
+    }
+    function removeGrid()
+    {
+      divsList.forEach(div=>div.classList.remove('gridon'));
+      state='off';
+    }
+    return state;
 }
+addDivs(numberOfSquares);
