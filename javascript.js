@@ -11,7 +11,7 @@ function addDivs(number)
        sketchpad.appendChild(square);
    }
 }
-function showGrid()
+function toggleGrid()
 {
     square.style.border=" 1px solid black";
 }
