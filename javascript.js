@@ -1,5 +1,6 @@
   let sketchpad=document.querySelector(".sketchpad");
-   let numberOfSquares=+prompt('no of squares on each edge');
+  let numberOfSquares=+prompt('no of squares on each edge');
+  let state='off';
 
 function addDivs(number)
 {
@@ -39,3 +40,4 @@ let button=document.querySelector('.toggleGrid');
 button.addEventListener('click',()=>{state=toggleGrid(state);});
 }
 addDivs(numberOfSquares);
+addEvents();
