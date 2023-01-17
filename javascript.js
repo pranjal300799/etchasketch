@@ -36,17 +36,17 @@ function toggleGrid(state)
 }
 function addEvents()
 {
-let button=document.querySelector('.toggleGrid');
-button.addEventListener('click',()=>{state=toggleGrid(state);});
-let sketchpad=document.querySelector(".sketchpad");
-sketchpad.addEventListener('mousedown',activateColoring);
-let clear=document.querySelector('.clear');
-clear.addEventListener('click',resetSketchpad);
+   let button=document.querySelector('.toggleGrid');
+   button.addEventListener('click',()=>{state=toggleGrid(state);});
+   let sketchpad=document.querySelector(".sketchpad");
+   sketchpad.addEventListener('mousedown',activateColoring);
+   let clear=document.querySelector('.clear');
+   clear.addEventListener('click',resetSketchpad);
 }
 function activateColoring()
 {
-let divsList=document.querySelectorAll('.sketchpad>div');
-divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
+  let divsList=document.querySelectorAll('.sketchpad>div');
+  divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
 }
 function changeColor(e)
 {
