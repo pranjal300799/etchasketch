@@ -20,6 +20,11 @@ body
 {
     display:flex;
 }
+.userPanel
+{
+    display:flex;
+    flex-direction:column;
+}
 .gridon
 {
     border:1px solid black;
