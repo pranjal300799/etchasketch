@@ -46,5 +46,9 @@ function activateColoring()
 let divsList=document.querySelectorAll('.sketchpad>div');
 divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
 }
+function changeColor(e)
+{
+   e.target.classList.add('alter');
+}
 addDivs(numberOfSquares);
 addEvents();
