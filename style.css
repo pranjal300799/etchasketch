@@ -24,6 +24,12 @@ body
 {
     display:flex;
     flex-direction:column;
+    justify-content:space-around;
+}
+.containerforinput
+{
+    display:flex;
+    flex-direction:column;
 }
 .gridon
 {
