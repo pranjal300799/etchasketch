@@ -86,3 +86,8 @@ function verifyInput(input)
 {
     return (input>=1&&input<=100);
 }
+function changeInk(e)
+{ 
+   let color=e.target.value;
+   ink=color;
+}
