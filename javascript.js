@@ -61,7 +61,7 @@ function changeColor(e)
 function resetSketchpad()
 {
   let divsList=document.querySelectorAll('.sketchpad>div');
-  divsList.forEach(div=>div.classList.remove('alter'));
+  divsList.forEach(div=>div.style['background-color']='');
 }
 addDivs(10);
 addEvents();  
