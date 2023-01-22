@@ -81,3 +81,7 @@ function clear()
    let nodesList=document.querySelectorAll('.sketchpad>div');
    nodesList.forEach(div=>parent.removeChild(div));
 }
+function verifyInput(input)
+{
+    return (input>=1&&input<=100);
+}
