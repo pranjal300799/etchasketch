@@ -43,7 +43,8 @@ function addEvents()
    clear.addEventListener('click',resetSketchpad);
    let squaresButton=document.querySelector('.containerforinput>button');
    squaresButton.addEventListener('click',getInput);
-   let colorInput=addEventListener('input',changeInk);
+   let colorInput=document.querySelector('#color');
+   colorInput.addEventListener('input',changeInk);
 }
 function activateColoring()
 {
@@ -84,8 +85,4 @@ function clear()
 function verifyInput(input)
 {
     return (input>=1&&input<=100);
-}
-function pickColor()
-{
-
 }
