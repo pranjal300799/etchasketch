@@ -52,7 +52,7 @@ function activateColoring()
   divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
 }
 function changeColor(e)
-{  
+{ //color is changed only if the div is not already colored prevent overwriting previous sketch
   if(e.target.style['background-color']==='')
    {
       e.target.style['background-color']=ink;
