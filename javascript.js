@@ -75,3 +75,9 @@ function getInput()
      prompt('hey');
   }
 }
+function clear()
+{
+   let parent=document.querySelector('.sketchpad');
+   let nodesList=document.querySelectorAll('.sketchpad>div');
+   nodesList.forEach(div=>parent.removeChild(div));
+}
