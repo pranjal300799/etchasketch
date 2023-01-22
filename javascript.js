@@ -53,7 +53,10 @@ function activateColoring()
 }
 function changeColor(e)
 {  
-   e.target.style['background-color']=ink;
+  if(e.target.style['background-color']==='')
+   {
+      e.target.style['background-color']=ink;
+   }
 }
 function resetSketchpad()
 {
