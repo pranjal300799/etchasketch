@@ -1,6 +1,4 @@
-  let sketchpad=document.querySelector(".sketchpad");
-  let numberOfSquares=+prompt('no of squares on each edge');
-  let state='off';
+let state='off';
 
 function addDivs(number)
 {
@@ -59,7 +57,7 @@ function resetSketchpad()
   let divsList=document.querySelectorAll('.sketchpad>div');
   divsList.forEach(div=>div.classList.remove('alter'));
 }
-addDivs(numberOfSquares);
+addDivs(10);
 addEvents();  
 function getInput()
 {
