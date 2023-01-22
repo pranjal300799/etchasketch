@@ -42,6 +42,8 @@ function addEvents()
    sketchpad.addEventListener('mousedown',activateColoring);
    let clear=document.querySelector('.clear');
    clear.addEventListener('click',resetSketchpad);
+   let squaresButton=document.querySelector('.containerforinput>button');
+   squaresButton.addEventListener('click',getInput);
 }
 function activateColoring()
 {
@@ -58,4 +60,18 @@ function resetSketchpad()
   divsList.forEach(div=>div.classList.remove('alter'));
 }
 addDivs(numberOfSquares);
-addEvents();
+addEvents();  
+function getInput()
+{
+  let input=document.querySelector('#squares');
+  let number=input.value;
+  if(verifyInput(number))
+  {
+     clear();
+     addDivs(number);
+  } 
+  else
+  {
+     prompt('hey');
+  }
+}
