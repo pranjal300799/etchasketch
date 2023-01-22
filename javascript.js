@@ -52,8 +52,8 @@ function activateColoring()
   divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
 }
 function changeColor(e)
-{
-   e.target.classList.add('alter');
+{  
+   e.target.style['background-color']=ink;
 }
 function resetSketchpad()
 {
