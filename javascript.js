@@ -1,4 +1,5 @@
 let state='off';
+let rainbowSwitch='off';
 let ink=document.querySelector('#color').value;
 function addDivs(number)
 {
@@ -31,7 +32,7 @@ function toggleGrid(state)
       divsList.forEach(div=>div.classList.remove('gridon'));
       state='off';
     }
-    return state;
+    return state;//to update the current state as in a real switch
 }
 function addEvents()
 {
@@ -45,6 +46,8 @@ function addEvents()
    squaresButton.addEventListener('click',getInput);
    let colorInput=document.querySelector('#color');
    colorInput.addEventListener('input',changeInk);
+   let rainbow=document.querySelector('.rainbow>button');
+   rainbow.addEventListener('click',()=>rainbowSwitch=(rainbowSwitch=='on')?'off':'on');
 }
 function activateColoring()
 {
@@ -90,7 +93,7 @@ function verifyInput(input)
     return (input>=1&&input<=100);
 }
 function changeInk(e)
-{ 
+{
    let color=e.target.value;
    ink=color;
 }
