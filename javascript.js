@@ -52,8 +52,10 @@ function addEvents()
 function activateColoring()
 {
   let divsList=document.querySelectorAll('.sketchpad>div');
-  divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
-}
+  divsList.forEach(div=>div.addEventListener('mouseover',()=>{
+    changeInk();         //changeInk is fired everytime before the changeColor() to
+    changeColor();}));   //keep the color varying if rainbowSwitch is on else the 
+}                       //color which the pickColor button represents
 function changeColor(e)
 { //color is changed only if the div is not already colored prevent overwriting previous sketch
   if(e.target.style['background-color']==='')
