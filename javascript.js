@@ -93,7 +93,12 @@ function verifyInput(input)
     return (input>=1&&input<=100);
 }
 function changeInk(e)
-{
+{  
+  if(rainbowSwitch=='on')
+  {
+    ink=randomColorGenerator();
+    return;
+  }
    let color=e.target.value;
    ink=color;
 }
