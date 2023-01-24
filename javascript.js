@@ -106,3 +106,13 @@ function changeInk(e)
    let color=e.target.value;
    ink=color;
 }
+function randomColorGenerator()
+{
+  let color="#";
+  let colorString="0123456789abcdef";
+  for(let i=0;i<6;i++)
+  {
+    color+=colorString.charAt(Math.floor((Math.random()*100))%15);
+  }
+  return color;
+}
