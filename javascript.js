@@ -128,3 +128,7 @@ function updateSwitchStatus()
     rainbowSwitch='on';
   }
 }
+function resetInkColor()
+{
+   ink=document.querySelector('#color').value;
+}
