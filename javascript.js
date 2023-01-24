@@ -58,7 +58,7 @@ function changeColor(e)
 { //color is changed only if the div is not already colored prevent overwriting previous sketch
   if(rainbowSwitch==='on')
   {
-    changeColor();
+    changeInk();
   }
   if(e.target.style['background-color']==='')
    {
