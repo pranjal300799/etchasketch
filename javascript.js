@@ -47,7 +47,7 @@ function addEvents()
    let colorInput=document.querySelector('#color');
    colorInput.addEventListener('input',changeInk);
    let rainbow=document.querySelector('.rainbow>button');
-   rainbow.addEventListener('click',()=>rainbowSwitch=(rainbowSwitch=='on')?'off':'on');
+   rainbow.addEventListener('click',updateSwitchStatus);
 }
 function activateColoring()
 {
@@ -115,4 +115,16 @@ function randomColorGenerator()
     color+=colorString.charAt(Math.floor((Math.random()*100))%15);
   }
   return color;
+}
+function updateSwitchStatus()
+{
+  if(rainbowSwitch==='on')
+  {
+    rainbowSwitch='off';
+    resetInkColor();
+  }
+  else
+  {
+    rainbowSwitch='on';
+  }
 }
