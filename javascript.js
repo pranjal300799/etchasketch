@@ -1,4 +1,3 @@
-let state='off';
 let rainbowSwitch='off';
 let ink=document.querySelector('#color').value;
 function addDivs(number)
@@ -11,33 +10,8 @@ function addDivs(number)
        sketchpad.appendChild(square);
    }
 }
-function toggleGrid(state)
-{
-    let divsList=document.querySelectorAll('.sketchpad>div');
-    if(state==='off')
-    {
-      showGrid();
-    }
-    else
-    {
-      removeGrid();
-    }
-    function showGrid()
-    {
-      divsList.forEach(div=>div.classList.add('gridon'));
-      state='on';
-    }
-    function removeGrid()
-    {
-      divsList.forEach(div=>div.classList.remove('gridon'));
-      state='off';
-    }
-    return state;//to update the current state as in a real switch
-}
 function addEvents()
 {
-   let button=document.querySelector('.toggleGrid');
-   button.addEventListener('click',()=>{state=toggleGrid(state);});
    let sketchpad=document.querySelector(".sketchpad");
    sketchpad.addEventListener('mousedown',activateColoring);
    let clear=document.querySelector('.clear');
