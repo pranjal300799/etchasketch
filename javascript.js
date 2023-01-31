@@ -24,6 +24,19 @@ function addEvents()
    let rainbow=document.querySelector('.rainbow>button');
    rainbow.addEventListener('click',updateSwitchStatus);
 }
+function togglePenState()
+{
+  if(penState==='off')
+  {
+    activateColoring();
+    penState='on';
+  }
+  else
+  {
+     deactivateColoring();
+     penState='off';
+  }
+}
 function activateColoring()
 {
   let divsList=document.querySelectorAll('.sketchpad>div');
