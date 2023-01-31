@@ -14,7 +14,7 @@ function addDivs(number)
 function addEvents()
 {
    let sketchpad=document.querySelector(".sketchpad");
-   sketchpad.addEventListener('mousedown',activateColoring);
+   sketchpad.addEventListener('mousedown',togglePenState);
    let clear=document.querySelector('.clear');
    clear.addEventListener('click',resetSketchpad);
    let squaresButton=document.querySelector('.containerforinput>button');
