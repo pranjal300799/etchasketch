@@ -25,15 +25,15 @@ function addEvents()
    rainbow.addEventListener('click',updateSwitchStatus);
 }
 function togglePenState()
-{  
-  penBlinker.style['background-color']='red';
+{  let penBlinker=document.querySelector('.penstatus>div');
+   
   if(penState==='off')
   { penBlinker.style['background-color']='green';
     activateColoring();
     penState='on';
   }
   else
-  {  let penBlinker=document.querySelector('.penstatus>div');
+  {  penBlinker.style['background-color']='red';
      deactivateColoring();
      penState='off';
   }
