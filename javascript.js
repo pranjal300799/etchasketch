@@ -41,7 +41,12 @@ function activateColoring()
 {
   let divsList=document.querySelectorAll('.sketchpad>div');
   divsList.forEach(div=>div.addEventListener('mouseover',changeColor));
-}                       
+}  
+function deactivateColoring()
+{
+  let divsList=document.querySelectorAll('.sketchpad>div');
+  divsList.forEach(div=>div.removeEventListener('mouseover',changeColor));
+}                      
 function changeColor(e)
 { //color is changed only if the div is not already colored prevent overwriting previous sketch
   if(rainbowSwitch==='on')
