@@ -1,5 +1,6 @@
 let rainbowSwitch='off';
 let ink=document.querySelector('#color').value;
+let penState='off';
 function addDivs(number)
 {
    for(let i=0;i<number**2;i++)
