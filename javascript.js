@@ -26,14 +26,18 @@ function addEvents()
 }
 function togglePenState()
 {  let penBlinker=document.querySelector('.penstatus>div');
-   
+   let state=document.querySelector('.penstatus>div>span');
   if(penState==='off')
-  { penBlinker.style['background-color']='green';
+  { 
+    state.textContent='ON';
+    penBlinker.style['background-color']='green';
     activateColoring();
     penState='on';
   }
   else
-  {  penBlinker.style['background-color']='red';
+  {  
+     state.textContent='OFF';
+     penBlinker.style['background-color']='red';
      deactivateColoring();
      penState='off';
   }
