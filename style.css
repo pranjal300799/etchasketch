@@ -4,7 +4,7 @@ body
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    background-image: linear-gradient(to bottom,rgb(236, 159, 16),rgb(216, 38, 68));
+    background-image: linear-gradient(to bottom,rgb(68, 12, 199),rgb(207, 158, 24));
 }
 .sketchpad
 {   display:flex;
