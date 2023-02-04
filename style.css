@@ -2,7 +2,6 @@ body
 {   height:100vh;
     display:flex;
     flex-direction:column;
-    align-items:center;
     justify-content:center;
     background-image: linear-gradient(to bottom,rgb(68, 12, 199),rgb(207, 158, 24));
 }
@@ -20,6 +19,13 @@ body
     border-radius:10px;
 }
 .wrapper
+{
+    display:flex;
+    flex:1 1 0;
+    align-items:center;
+    align-self:center;
+}
+.insidewrapper
 {
     display:flex;
 }
@@ -61,4 +67,11 @@ img
     border-radius:20px;
     align-items:center;
     justify-content: center;
+}
+.footer
+{ 
+    text-align:center;
+    font-size: 40px;
+    color:white;
+
 }
