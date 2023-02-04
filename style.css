@@ -75,3 +75,22 @@ img
     color:white;
 
 }
+button
+{   height:40px;
+    font-size:20px;
+    border-radius:15px;
+    background-color: rgb(27, 235, 148);
+}
+input
+{  font-size:30px;
+   height:50px;
+   width:75px;
+   border-radius:20px
+}
+.header
+{
+    font-size:100px;
+    align-self:center;
+    font-weight: bolder;
+    color:rgb(20, 209, 216)
+}
