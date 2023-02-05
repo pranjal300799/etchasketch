@@ -20,7 +20,7 @@ function addEvents()
    let squaresButton=document.querySelector('.containerforinput>button');
    squaresButton.addEventListener('click',getInput);
    let colorInput=document.querySelector('#color');
-   colorInput.addEventListener('input',changeInk);
+   colorInput.addEventListener('input',(e)=>{alertUser();changeInk(e);});
    let rainbow=document.querySelector('.rainbow>button');
    rainbow.addEventListener('click',updateSwitchStatus);
 }
@@ -129,4 +129,11 @@ function updateSwitchStatus()
 function resetInkColor()
 {
    ink=document.querySelector('#color').value;
+}
+function alertUser()
+{
+   if(rainbowSwitch==='on')
+   {
+    alert('First Switch off the rainbow mode');
+   }
 }
