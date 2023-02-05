@@ -125,3 +125,14 @@ label
     font-weight: bold;
     font-size:20px;
 }
+.logo
+{
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    transition:0.4s all ease;
+}
+.logo:hover
+{
+    transform:rotate(360deg);
+}
