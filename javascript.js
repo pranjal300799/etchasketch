@@ -68,8 +68,6 @@ function resetSketchpad()
   let divsList=document.querySelectorAll('.sketchpad>div');
   divsList.forEach(div=>div.style['background-color']='');
 }
-addDivs(10);
-addEvents();  
 function getInput()
 {
   let input=document.querySelector('#squares');
@@ -143,3 +141,5 @@ function alertUser()
     alert('First Switch off the rainbow mode');
    }
 }
+addDivs(10);
+addEvents();  
