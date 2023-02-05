@@ -115,14 +115,20 @@ function randomColorGenerator()
   return color;
 }
 function updateSwitchStatus()
-{
+{  
+  let color=document.querySelector('.rainbow>div');
+  let updateText=document.querySelector('.rainbow>div>span');
   if(rainbowSwitch==='on')
-  {
+  { 
+    color.style.backgroundColor='red';
+    updateText.textContent='OFF';
     rainbowSwitch='off';
     resetInkColor();
   }
   else
   {
+    color.style.backgroundColor='green';
+    updateText.textContent='ON';
     rainbowSwitch='on';
   }
 }
