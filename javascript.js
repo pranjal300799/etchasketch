@@ -81,7 +81,7 @@ function getInput()
   } 
   else
   {
-     prompt('hey');
+     alert('Enter a no. between 1 and 100');
   }
 }
 function clear()
